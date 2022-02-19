@@ -8,8 +8,10 @@ public class HttpController : MonoBehaviour
 
 	void Start()
 	{
+		//コルーチンは、IEnumeratorを返す関数として実装する
 		StartCoroutine(HttpConnect());
 	}
+	
 	IEnumerator HttpConnect()
 	{
 		string url = "https://joytas.net/php/hello.php";
